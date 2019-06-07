@@ -114,6 +114,41 @@
           }
         }
       }
+    },
+    "ngx-rut-validation": {
+      "projectType": "library",
+      "root": "projects/ngx-rut-validation",
+      "sourceRoot": "projects/ngx-rut-validation/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-rut-validation/tsconfig.lib.json",
+            "project": "projects/ngx-rut-validation/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-rut-validation/src/test.ts",
+            "tsConfig": "projects/ngx-rut-validation/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-rut-validation/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-rut-validation/tsconfig.lib.json",
+              "projects/ngx-rut-validation/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ngx-rut-validation-app"
 }

@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-rut-validation": [
+        "dist/ngx-rut-validation"
+      ],
+      "ngx-rut-validation/*": [
+        "dist/ngx-rut-validation/*"
+      ]
+    }
   }
 }
