@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { RutValidators } from 'ngx-rut-validation';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,6 @@ export class AppComponent {
   title = 'ngx-rut-validation-app';
 
   form = new FormGroup({
-    rut: new FormControl('', [ Validators.required ])
+    rut: new FormControl('', [ Validators.required, RutValidators.default ])
   });
 }

@@ -3,6 +3,6 @@
     <label>Ingresa el RUT</label>
     <input type="text" placeholder="RUT" formControlName="rut" autofocus required>
     <div *ngIf="form.controls.rut.hasError('required')">El RUT es requerido.</div>
-    <div *ngIf="form.controls.rut.hasError('rut')">El RUT es inválido.</div>
+    <div *ngIf="form.controls.rut.hasError('defaultrut')">El RUT es inválido.</div>
   </div>
 </form>
