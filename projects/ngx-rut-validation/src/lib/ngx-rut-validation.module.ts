@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { NgxRutValidationComponent } from './ngx-rut-validation.component';
 
 @NgModule({
-  declarations: [NgxRutValidationComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [NgxRutValidationComponent]
+  exports: []
 })
 export class NgxRutValidationModule { }
