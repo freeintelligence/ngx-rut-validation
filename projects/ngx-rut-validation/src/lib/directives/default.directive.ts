@@ -1,6 +1,6 @@
 import { Directive } from '@angular/core';
 import { NG_VALIDATORS, AbstractControl, Validator } from '@angular/forms';
-import { RutValidators } from '../validations';
+import { RutValidators } from '../validators';
 
 @Directive({
   selector: '[rutDefault]',
