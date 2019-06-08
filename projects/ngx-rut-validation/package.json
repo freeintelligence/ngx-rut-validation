@@ -1,6 +1,30 @@
 {
   "name": "ngx-rut-validation",
-  "version": "0.0.1",
+  "version": "8.0.0",
+  "description": "Angular package to validate RUT (Chilean identification): Reactive Forms, Pipes, Directives, among others.",
+  "author": {
+    "name": "FreeIntelligence",
+    "email": "free04381@gmail.com"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nalv/ngx-rut-validation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nalv/ngx-rut-validation/issues"
+  },
+  "homepage": "https://github.com/nalv/ngx-rut-validation#readme",
+  "keywords": [
+    "angular",
+    "angular8",
+    "ng",
+    "ngx",
+    "rut",
+    "chilean",
+    "chile",
+    "universal"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0"
