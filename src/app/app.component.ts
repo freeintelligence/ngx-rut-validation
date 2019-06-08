@@ -8,9 +8,9 @@ import { RutValidators } from 'ngx-rut-validation';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngx-rut-validation-app';
 
   form = new FormGroup({
     rut: new FormControl('', [ Validators.required, RutValidators.default() ])
   });
+
 }

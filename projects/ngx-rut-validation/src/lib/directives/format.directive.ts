@@ -1,5 +1,5 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
-import { format, clean } from 'rut.js';
+import { format } from 'rut.js';
 
 @Directive({
   selector: '[rutFormat]'
@@ -13,7 +13,7 @@ export class FormatDirective {
   }
 
   @HostListener('keyup')
-  onkeyup() {
+  onKeyUp() {
     if (typeof this.element.value === 'string' && this.element.value.length > 1) {
       this.element.value = format(this.element.value);
     }
