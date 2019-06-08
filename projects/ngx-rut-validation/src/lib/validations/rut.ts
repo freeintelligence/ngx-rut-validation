@@ -6,6 +6,6 @@ import { validate } from 'rut.js';
  */
 export function Rut(): ValidatorFn {
   return (control: AbstractControl): { [key: string]: any } | null => {
-    return validate(control.value) ? null : { defaultrut: true };
+    return validate(control.value) ? null : { rutdefault: true };
   };
 }

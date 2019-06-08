@@ -1,7 +1,7 @@
 <form [formGroup]="form">
   <div>
     <label>Ingresa el RUT</label>
-    <input type="text" placeholder="RUT" formControlName="rut" autofocus required>
+    <input type="text" placeholder="RUT" formControlName="rut" autofocus required rutDefault>
     <div *ngIf="form.controls.rut.hasError('required')">El RUT es requerido.</div>
     <div *ngIf="form.controls.rut.hasError('defaultrut')">El RUT es inválido.</div>
   </div>

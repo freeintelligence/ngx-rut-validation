@@ -11,6 +11,6 @@ export class AppComponent {
   title = 'ngx-rut-validation-app';
 
   form = new FormGroup({
-    rut: new FormControl('', [ Validators.required, RutValidators.default ])
+    rut: new FormControl('', [ Validators.required, RutValidators.default() ])
   });
 }
