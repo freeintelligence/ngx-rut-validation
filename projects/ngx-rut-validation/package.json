@@ -1,6 +1,6 @@
 {
   "name": "ngx-rut-validation",
-  "version": "8.0.1",
+  "version": "8.1.0",
   "description": "Angular package to validate RUT (Chilean identification): Reactive Forms, Pipes, Directives, among others.",
   "author": {
     "name": "FreeIntelligence",
