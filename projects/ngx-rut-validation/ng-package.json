@@ -3,9 +3,5 @@
   "dest": "../../dist/ngx-rut-validation",
   "lib": {
     "entryFile": "src/public-api.ts"
-  },
-  "whitelistedNonPeerDependencies": [
-    "tslib",
-    "rut.js"
-  ]
+  }
 }

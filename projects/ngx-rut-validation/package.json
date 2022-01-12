@@ -1,6 +1,6 @@
 {
   "name": "ngx-rut-validation",
-  "version": "8.1.0",
+  "version": "10.0.0",
   "description": "Angular package to validate RUT (Chilean identification): Reactive Forms, Pipes, Directives, among others.",
   "author": {
     "name": "FreeIntelligence",
@@ -9,15 +9,16 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nalv/ngx-rut-validation.git"
+    "url": "git+https://github.com/freeintelligence/ngx-rut-validation.git"
   },
   "bugs": {
-    "url": "https://github.com/nalv/ngx-rut-validation/issues"
+    "url": "https://github.com/freeintelligence/ngx-rut-validation/issues"
   },
-  "homepage": "https://github.com/nalv/ngx-rut-validation#readme",
+  "homepage": "https://github.com/freeintelligence/ngx-rut-validation#readme",
   "keywords": [
     "angular",
     "angular8",
+    "angular10",
     "ng",
     "ngx",
     "rut",
@@ -26,10 +27,11 @@
     "universal"
   ],
   "peerDependencies": {
-    "@angular/common": "^8.0.0",
-    "@angular/core": "^8.0.0"
+    "@angular/common": "^10.2.5",
+    "@angular/core": "^10.2.5",
+    "rut.js": "^1.0.1"
   },
   "dependencies": {
-    "rut.js": "^1.0.1"
+    "tslib": "^2.0.0"
   }
 }

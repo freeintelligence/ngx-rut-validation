@@ -3,9 +3,13 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-rut-validation-app": {
+    "ngx-rut-validation-workspace": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,17 +17,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-rut-validation-app",
+            "outputPath": "dist/ngx-rut-validation-workspace",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -40,7 +45,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -49,6 +53,11 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -57,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-rut-validation-app:build"
+            "browserTarget": "ngx-rut-validation-workspace:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-rut-validation-app:build:production"
+              "browserTarget": "ngx-rut-validation-workspace:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-rut-validation-app:build"
+            "browserTarget": "ngx-rut-validation-workspace:build"
           }
         },
         "test": {
@@ -83,7 +92,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -105,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-rut-validation-app:serve"
+            "devServerTarget": "ngx-rut-validation-workspace:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-rut-validation-app:serve:production"
+              "devServerTarget": "ngx-rut-validation-workspace:serve:production"
             }
           }
         }
@@ -119,13 +128,18 @@
       "projectType": "library",
       "root": "projects/ngx-rut-validation",
       "sourceRoot": "projects/ngx-rut-validation/src",
-      "prefix": "rut",
+      "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/ngx-rut-validation/tsconfig.lib.json",
             "project": "projects/ngx-rut-validation/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-rut-validation/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -150,5 +164,5 @@
         }
       }
     }},
-  "defaultProject": "ngx-rut-validation-app"
+  "defaultProject": "ngx-rut-validation-workspace"
 }

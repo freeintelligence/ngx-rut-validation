@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to ngx-rut-validation-app!');
+    expect(page.getTitleText()).toEqual('ngx-rut-validation-workspace app is running!');
   });
 
   afterEach(async () => {
