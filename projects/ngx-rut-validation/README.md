@@ -1,6 +1,6 @@
 # NgxRutValidation
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.5.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
 ## Code scaffolding
 

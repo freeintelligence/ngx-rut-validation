@@ -1,6 +1,6 @@
 {
   "name": "ngx-rut-validation",
-  "version": "10.0.0",
+  "version": "17.0.0",
   "description": "Angular package to validate RUT (Chilean identification): Reactive Forms, Pipes, Directives, among others.",
   "author": {
     "name": "FreeIntelligence",
@@ -19,6 +19,7 @@
     "angular",
     "angular8",
     "angular10",
+    "angular17",
     "ng",
     "ngx",
     "rut",
@@ -27,11 +28,12 @@
     "universal"
   ],
   "peerDependencies": {
-    "@angular/common": "^10.2.5",
-    "@angular/core": "^10.2.5",
+    "@angular/common": "^17.0.0",
+    "@angular/core": "^17.0.0",
     "rut.js": "^2.1.0"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
-  }
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
 }

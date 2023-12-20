@@ -1,8 +1,20 @@
 <form [formGroup]="form">
   <div>
-    <label>Ingresa el RUT (Pipe: {{ '143948420' | rutFormat }})</label>
-    <input type="text" placeholder="RUT" formControlName="rut" autofocus required rutFormat rutDefault>
-    <div *ngIf="form.controls.rut.hasError('required')">El RUT es requerido.</div>
-    <div *ngIf="form.controls.rut.hasError('rutdefault')">El RUT es inválido.</div>
+    <label>Ingresa el RUT (Pipe: {{ "143948420" | rutFormat }})</label>
+    <input
+      type="text"
+      placeholder="RUT"
+      formControlName="rut"
+      autofocus
+      required
+      rutFormat
+      rutDefault
+    />
+    <div *ngIf="form.controls.rut.hasError('required')">
+      El RUT es requerido.
+    </div>
+    <div *ngIf="form.controls.rut.hasError('rutdefault')">
+      El RUT es inválido.
+    </div>
   </div>
 </form>

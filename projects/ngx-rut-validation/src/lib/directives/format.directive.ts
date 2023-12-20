@@ -7,8 +7,8 @@ import { NG_VALIDATORS, NgModel, FormControlName } from '@angular/forms';
 })
 export class FormatDirective {
 
-  @ContentChild(NgModel, { static: true }) protected model: NgModel;
-  @ContentChild(FormControlName, { static: true }) protected formControlName: FormControlName;
+  @ContentChild(NgModel, { static: true }) protected model!: NgModel;
+  @ContentChild(FormControlName, { static: true }) protected formControlName!: FormControlName;
 
   private element: HTMLInputElement;
 
